@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
 
+import net.minecraft.util.StatCollector;
 import vintage.forgebackup.ForgeBackup;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -15,8 +16,6 @@ import net.minecraft.world.WorldProvider;
 import net.minecraft.world.WorldServer;
 
 import com.google.common.collect.Lists;
-
-import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Backup {
 	private final BackupSettings settings;
@@ -154,7 +153,7 @@ public class Backup {
 	
 	public void notifyAdmins(ICommandSender sender, Level level, String translationKey, Object... parameters) {
 		boolean sendPlayerNotifications = !(settings.getLoggingLevel() == 0);
-		String message = String.format(LanguageRegistry.instance().getStringLocalization(translationKey), parameters);
+		String message = StatCollector.translateToLocalFormatted(translationKey, parameters);
 		
 		if (sender instanceof TileEntityCommandBlock && !settings.getServer().worldServers[0].getGameRules().getGameRuleBooleanValue("commandBlockOutput"))
 		{

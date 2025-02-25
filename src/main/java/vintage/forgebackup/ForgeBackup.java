@@ -132,7 +132,7 @@ public class ForgeBackup implements ICommandSender {
 
 	@Override
 	public void sendChatToPlayer(String s) {
-		LOGGER.info(String.format("Recieved message: %s", s));
+		LOGGER.info(String.format("Received message: %s", s));
 	}
 
 	@Override
