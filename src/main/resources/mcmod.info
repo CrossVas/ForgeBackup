@@ -1,0 +1,9 @@
+[
+  {
+    "modid": "forgebackup",
+    "name": "Forge Backup",
+    "description": "ForgeBackup creates automatic backups of your worlds.",
+    "version": "1.5.2-1.1.2.98-reforged",
+    "authors": ["Monoxide", "CrossVas"]
+  }
+]
