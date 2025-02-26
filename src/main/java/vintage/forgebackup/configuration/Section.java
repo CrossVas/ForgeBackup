@@ -10,10 +10,11 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface Section {
-	String section();
-	String comment();
+    String section();
 
-	String GENERAL = Configuration.CATEGORY_GENERAL;
-	String BLOCK = Configuration.CATEGORY_BLOCK;
-	String ITEM = Configuration.CATEGORY_ITEM;
+    String comment();
+
+    String GENERAL = Configuration.CATEGORY_GENERAL;
+    String BLOCK = Configuration.CATEGORY_BLOCK;
+    String ITEM = Configuration.CATEGORY_ITEM;
 }
