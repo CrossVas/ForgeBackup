@@ -20,7 +20,7 @@ public class BackupConfiguration extends MonoConfiguration {
 
     ////////////////////////////////////////////////////////
     //                   GENERAL                          //
-    /// /////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
     @Section(section = Section.GENERAL, comment = "General configuration options are here")
     protected ConfigCategory general;
 
@@ -65,7 +65,7 @@ public class BackupConfiguration extends MonoConfiguration {
 
     ////////////////////////////////////////////////////////
     //                   BACKUP                           //
-    /// /////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
     @Section(section = BACKUP_SECTION, comment = "These settings control what things are backed up and how.")
     protected ConfigCategory backup;
 
@@ -122,7 +122,7 @@ public class BackupConfiguration extends MonoConfiguration {
 
     ////////////////////////////////////////////////////////
     //                   LONGTERM                         //
-    /// /////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
     @Section(section = LONGTERM_BACKUP_SECTION, comment =
             "These settings control what and how things are backed up when doing an\n" +
                     "archival backup. The file group settings are cumulative with the\n" +
@@ -191,8 +191,7 @@ public class BackupConfiguration extends MonoConfiguration {
 
     ////////////////////////////////////////////////////////
     //                   GETTERS                          //
-
-    /// /////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
     public int getBackupInterval() {
         return backupInterval;
     }
@@ -243,8 +242,7 @@ public class BackupConfiguration extends MonoConfiguration {
 
     ////////////////////////////////////////////////////////
     //                 /options section                   //
-
-    /// /////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////
 
     public BackupConfiguration(File configFile) {
         super(ForgeBackup.LOGGER);
